@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1 ><span class="badge badge-secondary">Order</h1>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th>Date of delivery</th>
+      <th>Est date of delivery</th>
+      <th>Order description</th>
+      <th>Product</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @order1s.each do |order1| %>
+      <tr>
+        <td><%= order1.date_of_delivery %></td>
+        <td><%= order1.est_date_of_delivery %></td>
+        <td><%= order1.order_description %></td>
+        <td><%= order1.product.product_name %></td>
+        <td><%= link_to 'Show', order1 %></td>
+        <td><%= link_to 'Edit', edit_order1_path(order1) %></td>
+        <td><%= link_to 'Destroy', order1, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Order', new_order1_path %>
+<%= link_to 'Back', dashboard_index_path %>

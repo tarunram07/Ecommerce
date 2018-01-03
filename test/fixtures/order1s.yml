@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_of_delivery: 2018-01-03
+  est_date_of_delivery: 2018-01-03
+  order_description: MyString
+  product: one
+
+two:
+  date_of_delivery: 2018-01-03
+  est_date_of_delivery: 2018-01-03
+  order_description: MyString
+  product: two
