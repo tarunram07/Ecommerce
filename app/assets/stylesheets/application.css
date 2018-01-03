@@ -12,4 +12,16 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap.min
  */
+
+
+.notice{
+
+	margin-top: 100px;
+}
+
+.alert{
+
+	margin-top: 100px;
+}

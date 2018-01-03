@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 20180103053905) do
     t.index ["product_id"], name: "index_order1s_on_product_id"
   end
 
-
   create_table "products", force: :cascade do |t|
     t.string   "product_name"
     t.string   "product_description"

@@ -1,3 +1,17 @@
-<h1><span class="badge badge-secondary">Welcome Ecommerce</h1>
-<%= link_to 'Login', new_user_session_path %>
-<%= link_to 'Sign up', new_user_registration_path %>
+<!-- <h1><span class="badge badge-secondary">Welcome Ecommerce</h1> -->
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-5">Welcome to Ecommerce Application</h1>
+      <p class="lead">Please slect the correct options for SIGNUP  OR SIGN IN</p>
+      <ul class="list-unstyled">
+        <li>Registered Member? Do <%= link_to 'Login', new_user_session_path %></li>
+        <li>First Time user Click to <%= link_to 'Sign up', new_user_registration_path %> </li>
+      </ul>
+    </div>
+  </div>
+</div>
